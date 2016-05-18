@@ -2,6 +2,8 @@
 
 Welcome to gDating! Dating for nerds!
 
+![](https://github.com/gSchool/galvanize-student-apis/blob/master/server/gdating/mockups/home.png)
+
 ### Your Task
 
 The [gDating API](http://galvanize-student-apis.herokuapp.com/gdating/api-docs/) is the _entire_ backend for an online dating/networking site.
