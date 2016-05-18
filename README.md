@@ -4,11 +4,32 @@ Welcome to gDating! Dating for nerds!
 
 ![](https://github.com/gSchool/galvanize-student-apis/blob/master/server/gdating/mockups/home.png)
 
-### Your Task
+### Project Description
 
-The [gDating API](http://galvanize-student-apis.herokuapp.com/gdating/api-docs/) is the _entire_ backend for an online dating/networking site.
+This project is an opportunity to test out all of your Angular knowledge and
+act as a frontend developer. The backend team (your instructors) have put 
+together an API for a dating website and you will be designing the frontend.
 
-Your task is to use build a front end application with AngularJS that uses this API.
+We've tried to make this project as "real life" as possible; you may very
+likely find yourself working with an API developed by another team in your
+company where the most information you get is documentation. Imagine it's
+built in a language you don't know!
+
+Thematically, you may take the project any direction you want: there's enough
+information to build a number of different sites that are about connecting
+individuals to one another. 
+
+There is a _lot_ to do in this project and we don't expect you'll get every
+feature completed. Take a look at the existing stories and mockups and make
+sensible choices on what to work on. With that said, make sure to focus
+on completing the Objectives above!
+
+__Students from other cohorts said:__
+
+* "It was a good opportunity to practice Angular design patterns."
+* "[The gDating] site brought together all the different concepts
+  we were working on."
+* "It allowed me to focus on what I wanted to learn."
 
 ---
 
@@ -25,6 +46,8 @@ In the most general sense, we are evaluating you based on your ability to:
 # [Go here for Mockups and Stories](mockups_stories.md)
 
 ### gDating API
+
+The [gDating API](http://galvanize-student-apis.herokuapp.com/gdating/api-docs/) is the _entire_ backend for an online dating/networking site.
 
 API Documentation can be found here:
 
