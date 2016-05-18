@@ -4,6 +4,18 @@ Welcome to gDating! Dating for nerds!
 
 ![](https://github.com/gSchool/galvanize-student-apis/blob/master/server/gdating/mockups/home.png)
 
+---
+
+### Objectives
+
+By the end of this project, you should be able to demonstrate that you can:
+
+* Build a single-page CRUD application in Angular using routing, factories / services and $http
+* Implement custom-directives
+* Implement JWT-based authentication between single-page apps and servers
+
+---
+
 ### Project Description
 
 This project is an opportunity to test out all of your Angular knowledge and
@@ -30,16 +42,6 @@ __Students from other cohorts said:__
 * "[The gDating] site brought together all the different concepts
   we were working on."
 * "It allowed me to focus on what I wanted to learn."
-
----
-
-### Acceptance Criteria
-
-In the most general sense, we are evaluating you based on your ability to:
-
-* Build a single-page CRUD application in Angular using routing, factories / services and $http
-* Implement custom-directives
-* Implement JWT-based authentication between single-page apps and servers
 
 ---
 
