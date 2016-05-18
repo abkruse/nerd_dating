@@ -80,7 +80,13 @@ The API has the following endpoints:
 
 ### Stories
 
-This is an overview of features for completion of the application. This is a lot! Prioritize your work first and get to what you can.
+This is an overview of features for completion of the application. This is a lot! 
+
+## Be sure to read ALL stories before starting to write a single line of code. Prioritize your work first and get to what you can.
+
+A CSV file of the stories that can be imported to pivotal tracker can be downloaded [here](https://students-gschool-production.s3.amazonaws.com/uploads/asset/file/138/gdating_stories.csv).
+
+Note that each story in the tracker CSV has several sub-tasks associated with it.
 
 ###### Overall
 
