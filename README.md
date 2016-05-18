@@ -1,34 +1,16 @@
 # Galvanize Dating Project
 
-You'll be building the front-end for a dating/networking site using
-the server inside this repo. You will __not__ be allowed to change
-the server routes, schema, or anything else about the server. If you'd
-like an additional route created or changed, you may submit a github issue.
-
-The API is [hosted on Heroku](https://galvanize-student-apis.herokuapp.com/gdating/members/ping).
-You may test it out by hitting a `/ping` endpoint for any of the available resources.
-
-```
-curl http://galvanize-student-apis.herokuapp.com/gdating/ping
-```
+You'll be building the front-end for a dating/networking site using an API [hosted on Heroku](https://galvanize-student-apis.herokuapp.com/gdating/members/ping).
 
 API Documentation can be found here:
 
 [http://galvanize-student-apis.herokuapp.com/gdating/api-docs/](http://galvanize-student-apis.herokuapp.com/gdating/api-docs/)
 
----
+You may test it out by hitting a `/ping` endpoint for any of the available resources.
 
-### Setup
-
-If you'd like, you may run this server locally; however, your final
-version must point towards the above url.
-
-1. Clone this repository.
-1. `npm install`
-1. Start your mongo daemon (e.g. `mongod`)
-1. Run `gulp`
-
-If the database is empty, on the first run a bunch of random data will be seeded.
+```
+curl http://galvanize-student-apis.herokuapp.com/gdating/ping
+```
 
 ---
 
