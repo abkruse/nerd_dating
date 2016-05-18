@@ -1,16 +1,22 @@
-# Galvanize Dating Project
+# gDating
 
-You'll be building the front-end for a dating/networking site using an API [hosted on Heroku](https://galvanize-student-apis.herokuapp.com/gdating/members/ping).
+Welcome to gDating! Dating for nerds!
 
-API Documentation can be found here:
+### Your Task
 
-[http://galvanize-student-apis.herokuapp.com/gdating/api-docs/](http://galvanize-student-apis.herokuapp.com/gdating/api-docs/)
+The [gDating API](http://galvanize-student-apis.herokuapp.com/gdating/api-docs/) is the _entire_ backend for an online dating/networking site.
 
-You may test it out by hitting a `/ping` endpoint for any of the available resources.
+Your task is to use build a front end application with AngularJS that uses this API.
 
-```
-curl http://galvanize-student-apis.herokuapp.com/gdating/ping
-```
+---
+
+### Acceptance Criteria
+
+In the most general sense, we are evaluating you based on your ability to:
+
+* Build a single-page CRUD application in Angular using routing, factories / services and $http
+* Implement custom-directives
+* Implement JWT-based authentication between single-page apps and servers
 
 ---
 
@@ -27,13 +33,43 @@ Overall, you may design the app how you like! We have intentionally tried to kee
 
 ---
 
-### Acceptance Criteria
+### gDating API
 
-In the most general sense, we are evaluating you based on your ability to:
+API Documentation can be found here:
 
-* Implement custom-directives
-* Implement JWT-based authentication between single-page apps and servers
-* Build a single-page CRUD application in Angular using routing, factories / services and $http
+[http://galvanize-student-apis.herokuapp.com/gdating/api-docs/](http://galvanize-student-apis.herokuapp.com/gdating/api-docs/)
+
+You may test it out by hitting a `/ping` endpoint for any of the available resources.
+
+```
+curl http://galvanize-student-apis.herokuapp.com/gdating/ping
+```
+
+
+The API has the following endpoints:
+
+|Method|Endpoint|Description
+|---|---|---|
+|**Auth**||
+|POST|/auth/register|Create and login a Member
+|POST|/auth/login|Login a Member
+|**Conversations**||
+|GET|/members/{id}/conversations|Retrieve all Conversations for a single Member
+|POST|/members/{id}/conversations|Update or create a Conversation between two Members.
+|GET|/members/{id}/conversations/{recipientId}|Retrieve the Conversation between two members
+|**Matches**||
+|GET|/members/{id}/matches|Get all Matches for a single Member
+|POST|/members/{id}/matches|Creates a new Match for a single Member
+|DELETE|/members/{id}/matches/{matchId}|Removes a Match for a single Member
+|**Members**||
+|GET|/members|All Members
+|POST|/members|Create a Member
+|DELETE|/members/{id}|Deactivates a single Member
+|GET|/members/{id}|Retrieve a single Member
+|PUT|/members/{id}|Update a single Member
+|GET|/members/search/{slug}|Retrieve a single Member by Slug
+|**Search**||
+|GET|/members/search|Search for a Member
 
 ---
 
@@ -100,7 +136,7 @@ As a user, I want a page where I can search for people based on a number of requ
 * If the user clicks on a matched member, they should be brought to the /members sub-view with that member selected.
 
 ###### Profile Page
-
+a
 As a user, I want a page where I can edit my account information.
 * As you get to decide what information is available to the user, you can decide the fields. Note though that username, email, and slug cannot be changed.
 * Client-side validation should be present on all applicable fields.
