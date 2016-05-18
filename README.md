@@ -8,10 +8,6 @@ The [gDating API](http://galvanize-student-apis.herokuapp.com/gdating/api-docs/)
 
 Your task is to use build a front end application with AngularJS that uses this API.
 
-If you'd like to run the server locally during development, follow the instructions [here](https://github.com/gSchool/galvanize-student-apis/tree/master/server/gdating).
-
-Note: your final deployed version must use the API hosted on heroku linked above.
-
 ---
 
 ### Acceptance Criteria
@@ -49,6 +45,9 @@ You may test it out by hitting a `/ping` endpoint for any of the available resou
 curl http://galvanize-student-apis.herokuapp.com/gdating/ping
 ```
 
+If you'd like to run the API locally during development, follow the instructions [here](https://github.com/gSchool/galvanize-student-apis/tree/master/server/gdating).
+
+Note: your final deployed version must use the API hosted on heroku linked above.
 
 The API has the following endpoints:
 
