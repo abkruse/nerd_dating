@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app='gDatingApp'>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/main.css" media="screen" title="no title" charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Monoton|Fjalla+One' rel='stylesheet' type='text/css'>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.js'></script>
+    <script type='text/javascript' src='app/app.module.js'></script>
+    <script type='text/javascript' src='app/js/home-feature/home.controller.js'></script>
+    <script type='text/javascript' src='app/js/signup-feature/signup.controller.js'></script>
+    <script type='text/javascript' src='app/js/login-feature/login.controller.js'></script>
+    <script type='text/javascript' src='app/js/signup-feature/signup.service.js'></script>
+    <base href='/' />
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="" ng-href='/'><p class="navbar-brand">G</p></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="" ng-href='/signup'>Register</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div ui-view></div>
+  </body>
+</html>

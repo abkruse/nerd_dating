@@ -1,0 +1,50 @@
+<div class='signup-screen container'>
+  <form class='signup-form col-md-6 col-md-offset-3' ng-submit='SignUp.signup(user)'>
+    <h1>Register</h1>
+    <div class='details'>
+      <div>
+        <label>First Name</label>
+        <input type='text' ng-model='user.names.firstName'  />
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input type='text' ng-model='user.names.lastName' />
+      </div>
+      <div>
+        <label>Gender</label>
+        <input type='text' ng-model='user.gender' placeholder=1 />
+      </div>
+      <div>
+        <label>Username</label>
+        <input type='text' ng-model='user.email' placeholder='jeff@howdy.com' required=true />
+      </div>
+      <div>
+        <label>Birthday</label>
+        <input type='text' placeholder='1983-01-01' ng-model='user.dob' />
+      </div>
+      <div>
+        <label>Telephone Number</label>
+        <input type='tel' ng-model='user.phone' />
+      </div>
+      <div>
+        <label>Website</label>
+        <input type='string' ng-model='user.website' />
+      </div>
+    </div>
+    <div class='form-group'>
+      <label>Username</label>
+      <input type='text' ng-model='user.username' required=true/>
+      <label>Password</label>
+      <input type='text' placeholder='password' value='thishastobe8letterslong' ng-model='user.password' required=true />
+      <label>Long:</label>
+      <input type='text' placeholder='0' ng-model='user.address.geo.lng' required=true/>
+      <label>Long</label>
+      <input type='text' placeholder='0' ng-model='user.address.geo.lat' required=true/>
+      <label>Slug</label>
+      <input type='text' placeholder='slugger' ng-model='user.slug' required=true/>
+      <label>Active</label>
+      <input type='text' ng-model='user.active' placeholder='true' />
+    </div>
+    <button type='submit' class='btn btn-default'>Create An Account</button>
+  </form>
+</div>
