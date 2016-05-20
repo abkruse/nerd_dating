@@ -1,5 +1,5 @@
 <div class='signup-screen container'>
-  <form class='signup-form col-md-6 col-md-offset-3' ng-submit='SignUp.signup(user)'>
+  <form class='signup-form col-md-6 col-md-offset-3' ng-submit='SignUp.signup(user)' method='POST' action='/'>
     <h1>Register</h1>
     <div class='details'>
       <div>
@@ -15,7 +15,7 @@
         <input type='text' ng-model='user.gender' placeholder=1 />
       </div>
       <div>
-        <label>Username</label>
+        <label>Email</label>
         <input type='text' ng-model='user.email' placeholder='jeff@howdy.com' required=true />
       </div>
       <div>
@@ -38,7 +38,7 @@
       <input type='text' placeholder='password' value='thishastobe8letterslong' ng-model='user.password' required=true />
       <label>Long:</label>
       <input type='text' placeholder='0' ng-model='user.address.geo.lng' required=true/>
-      <label>Long</label>
+      <label>Lat</label>
       <input type='text' placeholder='0' ng-model='user.address.geo.lat' required=true/>
       <label>Slug</label>
       <input type='text' placeholder='slugger' ng-model='user.slug' required=true/>

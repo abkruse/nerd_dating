@@ -11,7 +11,7 @@ angular
 
     vm.signup = function(user) {
       SignupService.signup(user).then( (data) => {
-        console.log(data);
+        $state.go('index');
       }).catch( (err) => {
         console.log(err);
       });
