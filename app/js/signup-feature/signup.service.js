@@ -8,13 +8,15 @@
     function SignupService ($http, $window) {
 
       return {
-        createCurrentUser: function(data) {
-          $window.localStorage.setItem('user', data.data.data);
-          $window.localStorage.setItem('token', data.data.token);
+        createCurrentUser: function(user, token) {
+          $window.localStorage.setItem('user', user);
+          $window.localStorage.setItem('token', token);
         },
         signup: function(user) {
-          return $http.post('http://galvanize-student-apis.herokuapp.com/gdating/auth/register', user).then( (data) => {
-            this.createCurrentUser(data.data);
+          return $http.post('https://galvanize-student-apis.herokuapp.com/gdating/auth/register', user).then( (data) => {
+            token = data.data.data.token;
+            user = data.data.data;
+            this.createCurrentUser(user, token);
           });
         }
       }

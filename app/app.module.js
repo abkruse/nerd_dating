@@ -27,6 +27,17 @@
           templateUrl: './app/views/login.html',
           controller: 'loginController',
           controllerAs: 'Login'
+        })
+        .state('members', {
+          url: '/members',
+          templateUrl: './app/views/members.html',
+          controller: 'membersController',
+          controllerAs: 'Members',
+          resolve: {
+            getMembers: function(MembersService) {
+               return MembersService.getMembers()
+            }
+          }
         });
         $locationProvider.html5Mode(true);
 

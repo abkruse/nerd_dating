@@ -1,0 +1,37 @@
+<div class='members-screen container'>
+  <div class='container'>
+    <form class='sort-form'>
+      <label>Sort By:</label>
+      <select ng-model='Members.viewOptions'>
+        <option value=''>All</option>
+        <option value='popular'>Popular</option>
+        <option value='nearby'>Near Me</option>
+        <option vlaue='matches'>My Matches</option>
+        <option value='chatting'>Chatting</option>
+      </select>
+    </form>
+  </div>
+  <div class='container col-md-6'>
+    <div class='members' ng-repeat='member in Members.$resolve.getMembers'>
+      <img src='{{member.avatar}}'  />
+      <div class='col-md-7'>
+        <h3>
+          {{member.username}}
+        </h3>
+        <h5>
+          Birthdate: {{member.dob | date:format:short}}
+        </h5>
+        <button ng-click='Members.getMemberInfo(member._id)' class='btn btn-default'>See More Details</button>
+      </div>
+    </div>
+  </div>
+  <div class='container col-md-6 detail-profile' ng-show='Members.soloMember'>
+    <img src='{{Members.soloMember.avatar}}' class='big-pic'/>
+    <h2>{{Members.soloMember.username}} &nbsp
+      <span ng-click="Members.likeMember(Members.soloMember, localStorage.getItem('user'))" class="glyphicon glyphicon-heart" aria-hidden="true"></span></h2>
+    <h4>{{Members.soloMember.dob | date:format:short}}</h4>
+    <p>{{Members.soloMember.gender | gender}}</p>
+    <p>{{Members.soloMember.description}}</p>
+    <p>{{Members.soloMember.website}}</p>
+  </div>
+</div>

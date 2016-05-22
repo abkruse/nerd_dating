@@ -2,9 +2,9 @@ angular
   .module('gDatingApp')
   .controller('loginController', loginController);
 
-  loginController.$inject = ['LoginService']
+  loginController.$inject = ['LoginService', '$state'];
 
-  function loginController (LoginService) {
+  function loginController (LoginService, $state) {
     let vm = this;
 
     vm.login = function(user) {
