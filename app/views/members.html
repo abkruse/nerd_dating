@@ -28,7 +28,7 @@
   <div class='container col-md-6 detail-profile' ng-show='Members.soloMember'>
     <img src='{{Members.soloMember.avatar}}' class='big-pic'/>
     <h2>{{Members.soloMember.username}} &nbsp
-      <span ng-click="Members.likeMember(Members.soloMember, localStorage.getItem('user'))" class="glyphicon glyphicon-heart" aria-hidden="true"></span></h2>
+      <span ng-click="Members.likeMember(Members.soloMember)" class="glyphicon glyphicon-heart" aria-hidden="true"></span></h2>
     <h4>{{Members.soloMember.dob | date:format:short}}</h4>
     <p>{{Members.soloMember.gender | gender}}</p>
     <p>{{Members.soloMember.description}}</p>

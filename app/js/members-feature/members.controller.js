@@ -15,12 +15,12 @@
           vm.soloMember = data;
         }).catch( (err) => {
           console.log(err);
-        })
+        });
       }
 
-      vm.likeMember = function(id, member) {
-        MembersService.likeMember(id, member).then( (data) => {
-
+      vm.likeMember = function(member) {
+        MembersService.likeMember(member).then( (data) =>{
+          return data;
         }).catch( (err) => {
           console.log(err);
         })
